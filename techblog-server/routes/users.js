@@ -4,24 +4,24 @@ var userModel = require('../model/user');
 var router = express.Router();
  
 /* GET users listing. */
-router.get('/', function(req, res, next) {
+// router.get('/', function(req, res, next) {
  
-  var userDetails = new userModel({
-    name: 'kuldeep',
-    email: 'kp@gmail.com',
-    password: 'kuldeep@123',
+//   var userDetails = new userModel({
+//     name: 'kuldeep',
+//     email: 'kp@gmail.com',
+//     password: 'kuldeep@123',
     
-  });
+//   });
  
-  userDetails.save(function(err,req1){
-    if(err) throw err;
+//   userDetails.save(function(err,req1){
+//     if(err) throw err;
    
-    res.render('index', { title: 'User Data Inserted' });
+//     res.render('index', { title: 'User Data Inserted' });
        
-  })
+//   })
  
   
-});
+// });
 
 router.post('/register',function(req,res,next){
 
